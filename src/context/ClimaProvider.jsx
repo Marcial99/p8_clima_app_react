@@ -22,6 +22,7 @@ const ClimaProvider = ({ children }) => {
   const consultarClima = async (datos) => {
     setCargando(true);
     setNoResultado(false);
+    setResultado({});
     try {
       const { ciudad, pais } = datos;
       const appId = import.meta.env.VITE_API_KEY;
